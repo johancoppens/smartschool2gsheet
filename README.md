@@ -1,5 +1,41 @@
 # Smartschool naar Google Sync
 
+## Installatie
+
+Clone project
+
+```
+$ git clone git@github.com:johancoppens/smartschool2gsheet.git
+
+```
+
+Volg onderstaan uitleg voor het opzetten van je eigen Google Cloud Project
+
+Hernoem de directory config.template naar config
+
+Plaats daarin je key file
+
+Pas config.js aan met jouw gegevens
+
+## Manueel uitvoeren
+
+In project directory directory
+
+```
+$ node src/ss2sheet.js 
+Done. Data available at:
+https://docs.google.com/spreadsheets/d/1jJC7kzQ6hXnZg76CkwabXKjqzRybHpzToNq-xxxxxxx/edit#gid=364365296
+
+```
+
+## Create cron Job
+
+See https://flaviocopes.com/cron-job-nodejs-app/
+
+
+
+
+
 ## Google Sheets met Nodejs
 
 ### Opzetten Google Cloud Project
