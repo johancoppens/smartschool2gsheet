@@ -1,6 +1,6 @@
 # Smartschool naar Google Sync
 
-## Gegevensmanipulatie Google Sheets met Nodejs
+## Google Sheets met Nodejs
 
 ### Opzetten Google Cloud Project
 
