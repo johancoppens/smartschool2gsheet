@@ -2,14 +2,14 @@
 const { google } = require('googleapis')
 
 const ssClient = require('smartschool-client')
-const confSS = require('../config/config.ss')
+const confSS = require('./config/config.ss')
 
 const path = require('path')
 
 const sheets = google.sheets('v4')
 const scopes = [ 'https://www.googleapis.com/auth/spreadsheets' ]
 // Pad naar credentials file
-const credentialsFile = path.resolve(`${__dirname}/../config/prefab-manifest-368610-e87b7c1d0828.json`)
+const credentialsFile = path.resolve(`${__dirname}/./config/prefab-manifest-368610-e87b7c1d0828.json`)
 const spreadsheetId = '1jJC7kzQ6hXnZg76CkwabXKjqzRybHpzToNq-4c6ltgY'
 
 let GAuth = null // Google auth token
