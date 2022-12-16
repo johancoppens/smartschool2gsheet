@@ -340,6 +340,7 @@ const main = async () => {
   } catch (e) {
     console.log(e)
   }
-  console.log('Done')
+  console.log('Done. Data available at:')
+  console.log('https://docs.google.com/spreadsheets/d/1jJC7kzQ6hXnZg76CkwabXKjqzRybHpzToNq-4c6ltgY/edit#gid=364365296')
 }
 main()
