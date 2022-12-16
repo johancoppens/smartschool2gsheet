@@ -2,15 +2,15 @@
 const { google } = require('googleapis')
 
 const ssClient = require('smartschool-client')
-const confSS = require('./config/config.ss')
+const conf = require('./config/config')
 
 const path = require('path')
 
 const sheets = google.sheets('v4')
 const scopes = [ 'https://www.googleapis.com/auth/spreadsheets' ]
 // Pad naar credentials file
-const credentialsFile = path.resolve(`${__dirname}/./config/prefab-manifest-368610-e87b7c1d0828.json`)
-const spreadsheetId = '1jJC7kzQ6hXnZg76CkwabXKjqzRybHpzToNq-4c6ltgY'
+const credentialsFile = path.resolve(`${__dirname}/./config/${conf.gKeyfileName}`)
+const spreadsheetId = conf.sheetId
 
 let GAuth = null // Google auth token
 
@@ -62,8 +62,8 @@ const updateTimestamp = async () => {
 
 const initSmartschoolClient = async () => {
   await ssClient.init({
-    apiWSDL: confSS.apiWSDL,
-    accessCode: confSS.accessCode
+    apiWSDL: conf.apiWSDL,
+    accessCode: conf.accessCode
   })
 
 }
@@ -341,6 +341,6 @@ const main = async () => {
     console.log(e)
   }
   console.log('Done. Data available at:')
-  console.log('https://docs.google.com/spreadsheets/d/1jJC7kzQ6hXnZg76CkwabXKjqzRybHpzToNq-4c6ltgY/edit#gid=364365296')
+  console.log(`https://docs.google.com/spreadsheets/d/${conf.sheetId}/edit#gid=364365296`)
 }
 main()
