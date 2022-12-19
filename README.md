@@ -1,5 +1,16 @@
 # Smartschool data naar Google Sheets met NodeJS
 
+De bedoeling van dit script is om de actuele Smartschool data naar een Google Sheet te synchroniseren.
+
+Je kan dit script elke dag laten uitvoeren dmv een cron job.
+
+Deze actuele data kan je dan gaan hergebruiken in andere sheets met de IMPORTRANGE functie, bvb
+
+```
+= IMPORTRANGE("https://docs.google.com/spreadsheets/d/1jJC7kzQ6hXnZg76CkwabXKjqzRybHpzToNq-xxxxxx; "leerlingen!A:H" )
+
+```
+
 ## Installatie
 
 Clone project
@@ -11,7 +22,7 @@ $ npm init
 
 ```
 
-Volg onderstaande uitleg voor het opzetten van je eigen Google Cloud Project, het aanmaken en delen van een Google Sheet.
+Volg onderstaande uitleg voor het opzetten van je eigen Google Cloud Project en het aanmaken en delen van een Google Sheet.
 
 Hernoem de directory config.template naar config
 
