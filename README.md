@@ -11,6 +11,8 @@ Deze actuele data kan je dan gaan hergebruiken in andere sheets met de IMPORTRAN
 
 ```
 
+Deze toepassing maakt gebruik van https://github.com/johancoppens/smartschool-client
+
 ## Installatie
 
 Clone project
