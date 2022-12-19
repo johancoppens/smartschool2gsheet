@@ -1,4 +1,4 @@
-# Smartschool naar Google Sync
+# Smartschool data naar Google Sheets met NodeJS
 
 ## Installatie
 
@@ -6,6 +6,8 @@ Clone project
 
 ```
 $ git clone git@github.com:johancoppens/smartschool2gsheet.git
+$ cd smartschool2gsheet
+$ npm init
 
 ```
 
@@ -45,8 +47,6 @@ Klik op het + ENABLE APIS AND SERVICES bovenaan op de "Enabled APIs and services
 Zoek naar Google Sheets API en klik op ENABLE
 
 Klik op de CREDENTIALS tab op de GoogleSheets API pagina
-
-[TODO] Uitleg waarom service account
 
 Klik op + CREATE CREDENTIALS > Service account
 
