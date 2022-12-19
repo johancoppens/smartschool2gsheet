@@ -9,7 +9,7 @@ $ git clone git@github.com:johancoppens/smartschool2gsheet.git
 
 ```
 
-Volg onderstaan uitleg voor het opzetten van je eigen Google Cloud Project
+Volg onderstaande uitleg voor het opzetten van je eigen Google Cloud Project, het aanmaken en delen van een Google Sheet.
 
 Hernoem de directory config.template naar config
 
@@ -19,7 +19,7 @@ Pas config.js aan met jouw gegevens
 
 ## Manueel uitvoeren
 
-In project directory directory
+In project directory
 
 ```
 $ node src/ss2sheet.js 
@@ -32,13 +32,7 @@ https://docs.google.com/spreadsheets/d/1jJC7kzQ6hXnZg76CkwabXKjqzRybHpzToNq-xxxx
 
 See https://flaviocopes.com/cron-job-nodejs-app/
 
-
-
-
-
-## Google Sheets met Nodejs
-
-### Opzetten Google Cloud Project
+## Opzetten Google Cloud Project
 
 Ga naar https://console.cloud.google.com/
 
@@ -76,43 +70,11 @@ Wij gaan dit bestand opslaan in de project folder onder src/config om het later 
 
 Als je git zou gebruiken om je project te beheren en op te slaan in een publieke repo, bvb Github, vergeet dan niet deze directory op te nemen in je .gitignore file!
 
-### Google Sheet Aanmaken
+## Google Sheet Aanmaken
 
 De volgende stap is een Google Sheet aanmaken. Omdat we de eerder gemaakte service account gaan gebruiken om data te uit te wisselen van en naar de sheet, moeten we de sheet delen met deze account.
 
-Maak een sheet en geef het een naam, bvb Smartschool2GoogleSync
+Maak een sheet en geef het een naam, bvb SmartschoolMasterData
 
 Klik op Delen, en voeg de service account als bewerker toe met het email adres ervan, bvb smartschool2googlesync@prefab-manifest-xxxxxx.iam.gserviceaccount.com.
-
-### Google Sheets Access in NodeJS
-
-Voeg de googleapis npm module toe aan je project
-
-$ npm install --save googleapis
-
-Maak een script aan sheet_write.js
-
-TODO link naar examples/sheet_write.js
-
-Voer het script uit met 
-
-```
-$ node sheet_write.js
-
-```
-
-Als alles goed gaat zal er data naar de spreadsheet worden geschreven
-
-### Ophalen Gegevens Smartschool
-
-Voeg de smartschool-client module toe aan je project met
-
-```bash
-$ npm install --save github:johancoppens/smartschool-client
-```
-
-Zie https://github.com/johancoppens/smartschool-client voor meer uitleg over de module en verschillende voorbeelden.
-
-
-### Smartschool Data naar Sheets
 
